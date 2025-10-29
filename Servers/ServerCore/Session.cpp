@@ -22,7 +22,7 @@ Session::~Session()
 void Session::Bind(boost::asio::io_context& io)
 {
     _io = &io;
-    _socket = std::make_unique<tcp::socket>(io);
+    _socket = std::make_shared<tcp::socket>(io);
 }
 
 void Session::Send(SendBufferRef sendBuffer)

@@ -42,7 +42,7 @@ private:
 
     std::weak_ptr<Service> _service;
     boost::asio::io_context* _io = nullptr;
-    std::unique_ptr<boost::asio::ip::tcp::socket> _socket;
+    std::shared_ptr<boost::asio::ip::tcp::socket> _socket;
     NetAddress _netAddress;
     Atomic<bool> _connected = false;
 

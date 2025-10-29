@@ -9,7 +9,7 @@ class Listener : public AsioObject
 {
 protected:
     boost::asio::io_context* _io = nullptr;
-    std::unique_ptr<boost::asio::ip::tcp::acceptor> _acceptor;
+    std::shared_ptr<boost::asio::ip::tcp::acceptor> _acceptor;
     ServerServiceRef _service;
     Vector<SessionRef> _pending;
 

@@ -21,7 +21,7 @@ bool Listener::StartAccept(ServerServiceRef service)
     _service = service;
     if (!_service || !_io) return false;
 
-    if (!_acceptor) _acceptor = std::make_unique<tcp::acceptor>(*_io);
+    if (!_acceptor) _acceptor = std::make_shared<tcp::acceptor>(*_io);
     if (_acceptor->is_open()) {
         boost::system::error_code ec;
         _acceptor->close(ec);
