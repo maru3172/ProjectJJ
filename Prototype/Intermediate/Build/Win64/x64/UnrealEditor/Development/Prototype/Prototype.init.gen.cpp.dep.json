@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\myeos\\documents\\github\\unreal\\prototype\\intermediate\\build\\win64\\unrealeditor\\inc\\prototype\\uht\\prototype.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\myeos\\documents\\github\\unreal\\prototype\\intermediate\\build\\win64\\x64\\prototypeeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\myeos\\documents\\github\\unreal\\prototype\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\prototype\\definitions.prototype.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
